@@ -1,0 +1,15 @@
+# Not in git (guide section 10): anything copied from the book. These live on the team Drive (cmp305-data/).
+data/
+verification/
+*.pdf
+
+# environments and OS files
+.venv/
+venv/
+__MACOSX/
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/

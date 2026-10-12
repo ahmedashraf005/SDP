@@ -1,0 +1,70 @@
+{"claim": "Every recursive function needs a base case that is solved without making another recursive call", "type": "prose", "expected_pages": [8, 9]}
+{"claim": "A memory leak happens when dynamically allocated memory is never freed with delete", "type": "prose", "expected_pages": [22, 33]}
+{"claim": "An lvalue reference can only bind to a named object, while an rvalue reference binds to a temporary value that will be thrown away right after", "type": "prose", "expected_pages": [23, 24]}
+{"claim": "Passing a large object by constant reference avoids making a copy while preventing the function from changing it", "type": "prose", "expected_pages": [26, 27]}
+{"claim": "If a class owns memory through a raw pointer, the defaults are wrong and it needs its own destructor plus copy and move versions of both the constructor and operator=", "type": "prose", "expected_pages": [30, 32, 33, 35]}
+{"claim": "A function object is a class that overloads operator() so its instances can be called like functions", "type": "prose", "expected_pages": [41, 42]}
+{"claim": "Big-O gives an upper bound on growth: T(N) is O(f(N)) if T(N) <= c f(N) for all N past some n0", "type": "prose", "expected_pages": [51, 52]}
+{"claim": "The cubic maximum subsequence sum algorithm tries every pair of endpoints and sums the elements between them", "type": "prose", "expected_pages": [60, 61]}
+{"claim": "Kadane-style scanning solves the maximum contiguous subsequence sum problem in linear time", "type": "prose", "expected_pages": [56, 62, 65, 66]}
+{"claim": "The divide-and-conquer maximum subsequence sum algorithm runs in O(N log N) time", "type": "prose", "expected_pages": [62, 63, 64]}
+{"claim": "Binary search on a sorted array takes O(log N) time because each step halves the search range", "type": "prose", "expected_pages": [67, 68]}
+{"claim": "Euclid's algorithm for the greatest common divisor runs in a logarithmic number of iterations", "type": "prose", "expected_pages": [68, 69]}
+{"claim": "Removing every other element of a std::vector by calling erase is quadratic, while doing it on a linked list is linear", "type": "prose", "expected_pages": [83, 84]}
+{"claim": "A doubly linked list with header and tail sentinel nodes avoids special cases when inserting at the ends", "type": "prose", "expected_pages": [80, 92]}
+{"claim": "Stack push and pop operations take constant time", "type": "prose", "expected_pages": [103, 104]}
+{"claim": "A postfix expression is evaluated left to right using a stack in linear time", "type": "prose", "expected_pages": [105, 106, 107]}
+{"claim": "A queue implemented with a circular array supports enqueue and dequeue in O(1)", "type": "prose", "expected_pages": [112, 113]}
+{"claim": "The depth of a node is the length of the path from the root to it; the root has depth 0", "type": "prose", "expected_pages": [122]}
+{"claim": "In a binary search tree, all keys in the left subtree are smaller than the node and all keys in the right subtree are larger", "type": "prose", "expected_pages": [126, 132]}
+{"claim": "Inserting already sorted keys into an unbalanced binary search tree makes it degenerate into a linked list with quadratic total insertion time", "type": "prose", "expected_pages": [144, 168]}
+{"claim": "An AVL tree requires that the heights of the left and right subtrees of every node differ by at most one", "type": "prose", "expected_pages": [144, 145]}
+{"claim": "Splay trees guarantee O(log N) amortized time per operation even though one operation can take linear time", "type": "prose", "expected_pages": [158, 163]}
+{"claim": "Inorder traversal of a binary search tree visits the keys in sorted order in linear time", "type": "prose", "expected_pages": [129, 166]}
+{"claim": "In a B-tree of order M, every non-leaf node other than the root has between M/2 and M children", "type": "prose", "expected_pages": [169, 170]}
+{"claim": "Hash tables support insertion, deletion and lookup in constant average time but cannot efficiently print items in sorted order", "type": "prose", "expected_pages": [193, 236]}
+{"claim": "With separate chaining, every bucket holds a linked list of the keys whose hash value lands there", "type": "prose", "expected_pages": [196, 197]}
+{"claim": "Linear probing suffers from primary clustering, where occupied cells form long contiguous blocks", "type": "prose", "expected_pages": [201, 202]}
+{"claim": "With quadratic probing, if the table size is prime and the table is at least half empty, a new element can always be inserted", "type": "prose", "expected_pages": [204, 205]}
+{"claim": "Rehashing builds a table about twice as large and reinserts every element, which costs O(N) but is amortized over many insertions", "type": "prose", "expected_pages": [209, 210]}
+{"claim": "Cuckoo hashing uses two hash functions and two tables, so a lookup checks at most two locations", "type": "prose", "expected_pages": [215, 216, 217]}
+{"claim": "Universal hashing picks the hash function at random from a family so no fixed input is bad for every choice", "type": "prose", "expected_pages": [230, 231]}
+{"claim": "A binary heap is a complete binary tree stored in an array where the children of position i are at 2i and 2i+1", "type": "prose", "expected_pages": [247, 248]}
+{"claim": "Inserting into a binary heap percolates the new element up and takes O(log N) in the worst case", "type": "prose", "expected_pages": [249, 251]}
+{"claim": "deleteMin on a binary heap removes the root and percolates the hole down, taking logarithmic time", "type": "prose", "expected_pages": [251, 252]}
+{"claim": "The buildHeap operation turns an unordered array into a heap in linear time", "type": "prose", "expected_pages": [255, 257]}
+{"claim": "Leftist heaps support merging two heaps in O(log N) time", "type": "prose", "expected_pages": [261, 266]}
+{"claim": "A binomial queue keeps a collection of binomial trees, and merging, inserting and deleteMin each cost O(log N) in the worst case", "type": "prose", "expected_pages": [271, 273]}
+{"claim": "Insertion sort runs in linear time on input that is already sorted", "type": "prose", "expected_pages": [294, 295]}
+{"claim": "Insertion sort takes quadratic time on average", "type": "prose", "expected_pages": [294, 295]}
+{"claim": "Shellsort with Hibbard's increments has a worst-case running time of Theta(N^(3/2))", "type": "prose", "expected_pages": [298, 299]}
+{"claim": "Mergesort runs in O(N log N) time but needs a temporary array linear in the input size", "type": "prose", "expected_pages": [304, 309]}
+{"claim": "Quicksort averages O(N log N) but degrades to quadratic time in the worst case", "type": "prose", "expected_pages": [309, 319, 321]}
+{"claim": "Median-of-three pivot selection protects quicksort against sorted and reverse-sorted input", "type": "prose", "expected_pages": [312, 313]}
+{"claim": "A decision tree argument shows that sorting by comparisons alone cannot beat Omega(N log N) comparisons on worst-case input", "type": "prose", "expected_pages": [323, 325]}
+{"claim": "Bucket sort with M buckets sorts N integers in O(M + N) time", "type": "prose", "expected_pages": [331]}
+{"claim": "The adjacent-exchange lower bound argument applies to selection sort, so it needs a quadratic number of swaps", "type": "prose", "expected_pages": [295, 296]}
+{"claim": "Dropping N balls at random into N^2 bins gives under a 50% chance that every bin ends up holding at most one ball", "type": "prose", "expected_pages": [213]}
+{"claim": "int n = v.size();\nfor (int k = n / 2 - 1; k >= 0; k--)\n    percDown(v, k, n);   // heapify the array first", "type": "code", "expected_pages": [302]}
+{"claim": "int best = 0;\nfor (int lo = 0; lo < n; lo++)\n    for (int hi = lo; hi < n; hi++) {\n        int s = 0;\n        for (int m = lo; m <= hi; m++) s += v[m];\n        best = max(best, s);\n    }", "type": "code", "expected_pages": [61]}
+{"claim": "int left = 0, right = n - 1;\nwhile (left <= right) {\n    int middle = left + (right - left) / 2;\n    if (arr[middle] == key) return middle;\n    if (arr[middle] < key) left = middle + 1;\n    else right = middle - 1;\n}\nreturn -1;", "type": "code", "expected_pages": [67]}
+{"claim": "The capital of France is Paris", "type": "prose", "expected_pages": []}
+{"claim": "The derivative of sin x is cos x", "type": "prose", "expected_pages": []}
+{"claim": "Integration by parts states that the integral of u dv equals uv minus the integral of v du", "type": "prose", "expected_pages": []}
+{"claim": "The limit of sin(x)/x as x approaches 0 equals 1", "type": "prose", "expected_pages": []}
+{"claim": "Photosynthesis converts light energy into chemical energy stored in glucose", "type": "prose", "expected_pages": []}
+{"claim": "A half adder produces a sum bit and a carry bit from two input bits", "type": "prose", "expected_pages": []}
+{"claim": "Karnaugh maps simplify Boolean expressions by grouping adjacent ones", "type": "prose", "expected_pages": []}
+{"claim": "World War II ended in 1945", "type": "prose", "expected_pages": []}
+{"claim": "The mitochondria is the powerhouse of the cell", "type": "prose", "expected_pages": []}
+{"claim": "Newton's second law states that force equals mass times acceleration", "type": "prose", "expected_pages": []}
+{"claim": "The chain rule says the derivative of f(g(x)) is f'(g(x)) times g'(x)", "type": "prose", "expected_pages": []}
+{"claim": "A flip-flop stores one bit and changes state on a clock edge", "type": "prose", "expected_pages": []}
+{"claim": "After opening a file with an ifstream, call fail() to find out whether the file could actually be opened", "type": "prose", "expected_pages": [], "source": "cmp220"}
+{"claim": "setw from <iomanip> only affects the next item printed, while setprecision stays in effect until it is changed", "type": "prose", "expected_pages": [], "source": "cmp220"}
+{"claim": "In a switch statement, a case without a break falls through and also runs the statements of the case below it", "type": "prose", "expected_pages": [], "source": "cmp220"}
+{"claim": "getline(cin, s) reads a whole line including the spaces, whereas cin >> s stops at the first whitespace", "type": "prose", "expected_pages": [], "source": "cmp220"}
+{"claim": "strncpy does not add the terminating null character when the source string is at least as long as the count you pass", "type": "prose", "expected_pages": [], "source": "cmp220"}
+{"claim": "A derived class constructor should call the base class constructor in its initialization section, otherwise the base default constructor runs", "type": "prose", "expected_pages": [], "source": "cmp220"}
+{"claim": "A do-while loop always executes its body at least once because the condition is tested at the bottom", "type": "prose", "expected_pages": [], "source": "cmp220"}
+{"claim": "Calling srand(time(0)) once at the start of main seeds rand() so each run produces a different sequence", "type": "prose", "expected_pages": [], "source": "cmp220"}

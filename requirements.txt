@@ -1,0 +1,10 @@
+pymupdf>=1.24
+numpy>=1.26
+scikit-learn>=1.4        # LSA fallback when MiniLM weights are unavailable
+sentence-transformers>=2.7   # all-MiniLM-L6-v2 (preferred dense embedder)
+rank_bm25>=0.2.2
+sympy>=1.12
+nltk>=3.8                # Snowball stemmer only, no data download
+requests>=2.31
+beautifulsoup4>=4.12
+pytest>=8
